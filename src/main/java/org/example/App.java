@@ -1,0 +1,33 @@
+package org.example;
+import java.util.Scanner;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        double number1;
+        double number2;
+
+        String input1;
+        String input2;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("What is the first number? ");
+        input1 = sc.nextLine();
+
+        System.out.print("What is the second number? ");
+        input2 = sc.nextLine();
+
+        number1 = Double.valueOf(input1);
+        number2 = Double.valueOf(input2);
+
+        System.out.println(input1 + "+" + input2 + "=" + (number1 + number2));
+        System.out.println(input1 + "-" + input2 + "=" + (number1 - number2));
+        System.out.println(input1 + "*" + input2 + "=" + (number1 * number2));
+        System.out.println(input1 + "/" + input2 + "=" + (number1 / number2));
+    }
+}
