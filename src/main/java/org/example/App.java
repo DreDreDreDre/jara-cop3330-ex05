@@ -22,12 +22,14 @@ public class App
         System.out.print("What is the second number? ");
         input2 = sc.nextLine();
 
-        number1 = Double.valueOf(input1);
-        number2 = Double.valueOf(input2);
+        number1 = Double.parseDouble(input1);
+        number2 = Double.parseDouble(input2);
 
         System.out.println(input1 + "+" + input2 + "=" + (number1 + number2));
         System.out.println(input1 + "-" + input2 + "=" + (number1 - number2));
         System.out.println(input1 + "*" + input2 + "=" + (number1 * number2));
         System.out.println(input1 + "/" + input2 + "=" + (number1 / number2));
+
+        sc.close();
     }
 }
